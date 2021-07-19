@@ -4,7 +4,7 @@ Description=todo service
 User=todo
 Type=simple
 Environment=REDIS_API_ADDRESS=http://172.31.28.80:8080
-ExecStart=/bin/node /home/ubuntu/shell-scripting/TODOAPP/todo
+ExecStart=/bin/node /root/shell-script/todo
 SyslogIdentifier=todo
 Restart=on-failure
 [Install]
