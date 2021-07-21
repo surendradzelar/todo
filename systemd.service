@@ -1,11 +1,10 @@
 [Unit]
-Description=todo service
+Description=Todo Service
+
 [Service]
-User=todo
-Type=simple
-Environment=REDIS_API_ADDRESS=http://172.31.28.80:8080
-ExecStart=/bin/node /root/shell-script/todo/server.js
-SyslogIdentifier=todo
-Restart=on-failure
+Environment=REDIS_HOST=REDIS_ENDPOINT
+ExecStart=/bin/node /home/app/todo/server.js
+SyslogIdentifier =todo
+
 [Install]
 WantedBy=multi-user.target
