@@ -3,7 +3,7 @@ Description=Todo Service
 
 [Service]
 Environment=REDIS_HOST=REDIS_ENDPOINT
-ExecStart=/bin/node /home/app/todo/server.js
+ExecStart=/bin/node /root/todo-shell/server.js
 SyslogIdentifier =todo
 
 [Install]
